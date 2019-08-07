@@ -5,13 +5,14 @@
   </ItemGroup>
 
   <PropertyGroup>
+    <AssemblyName>Accord.Math</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <DefaultItemExcludes>Properties/**;$(DefaultItemExcludes)</DefaultItemExcludes>
   </PropertyGroup>

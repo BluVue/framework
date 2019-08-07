@@ -667,7 +667,7 @@ namespace Accord
 #endif
 
         // TODO: Move this method to a more appropriate location
-        internal static WebClient NewWebClient()
+        public static WebClient NewWebClient()
         {
             var webClient = new WebClient();
             webClient.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) (Accord.NET Framework)");
@@ -684,7 +684,7 @@ namespace Accord
         /// <param name="maxAttempts">The maximum number of attempts.</param>
         /// <param name="overwrite">Do not overwrite <paramref name="fileName"/> if it already exists.</param>
         /// 
-        internal static void DownloadFileWithRetry(this WebClient client, string url, string fileName, int maxAttempts = 3, bool overwrite = false)
+        public static void DownloadFileWithRetry(this WebClient client, string url, string fileName, int maxAttempts = 3, bool overwrite = false)
         {
             if (!overwrite && File.Exists(fileName))
                 return;
